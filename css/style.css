@@ -32,6 +32,162 @@
     animation: shake 0.8s ease infinite;
 }
 
+/* Update logo-cropper class */
+.logo-cropper {
+    width: 250px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Add responsive logo sizing */
+@media (max-width: 768px) {
+    .logo-cropper {
+        width: 180px;
+        height: 30px;
+    }
+    
+    .navbar a img {
+        height: 200px !important; /* Override inline style */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-cropper {
+        width: 150px;
+        height: 25px;
+    }
+    
+    .navbar a img {
+        height: 75px !important;
+        width: 90px !important;
+        padding: 0 !important;
+    }
+    .navbar {
+        padding: 0px !important;
+    }
+}
+
+/* Add responsive heading sizes */
+@media (max-width: 768px) {
+    h1, .h1 {
+        font-size: calc(1.75rem + 1.5vw) !important;
+    }
+    
+    h2, .h2 {
+        font-size: calc(1.5rem + 1vw) !important;
+    }
+    
+    .display-4 {
+        font-size: calc(1.5rem + 2vw) !important;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Adjust button padding on mobile */
+@media (max-width: 576px) {
+    .gradient-btn {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Add responsive spacing */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .my-5 {
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+    }
+    
+    /* Adjust service items */
+    .service-item {
+        padding: 30px 20px;
+    }
+    
+    /* Adjust footer spacing */
+    .footer {
+        padding-top: 3rem;
+    }
+}
+
+/* Stack items on mobile */
+@media (max-width: 576px) {
+    .d-flex {
+        flex-direction: column;
+    }
+    
+    .align-items-center {
+        text-align: center;
+    }
+    
+    /* Center social icons on mobile */
+    .footer .btn.btn-social {
+        margin: 5px;
+    }
+}
+
+/* Update navbar styles */
+@media (max-width: 991.98px) {
+    .navbar {
+        height: auto;
+        /* padding: 10px 0 !important; */
+    }
+    
+    .navbar-collapse {
+        background-color: var(--primary);
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+        padding: 12px 0;
+        text-align: center;
+    }
+    
+    /* Adjust sticky navbar behavior */
+    .sticky-top {
+        top: 0;
+    }
+}
+
+/* Update hero section */
+@media (max-width: 768px) {
+    .hero-header {
+        margin-top: -60px;
+        padding-bottom: 3rem;
+    }
+    
+    .hero-header img {
+        max-width: 90%;
+        margin-top: 2rem;
+    }
+    
+    /* Adjust hero text alignment */
+    .text-lg-start {
+        text-align: center !important;
+    }
+    
+    /* Center hero buttons */
+    .hero-header .btn {
+        margin: 5px;
+    }
+}
+
+
+
 @keyframes shake {
     0%, 100% { transform: translateY(-3px) rotate(-10deg); }
     50% { transform: translateY(-3px) rotate(10deg); }
@@ -238,7 +394,7 @@ h6,
 }
 
 .navbar {
-    padding: 11px 0 !important;
+    padding: 11px 0;
     height: 75px;
 }
 
