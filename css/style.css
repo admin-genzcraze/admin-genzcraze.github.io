@@ -46,10 +46,6 @@
         width: 180px;
         height: 30px;
     }
-    
-    .navbar a img {
-        height: 200px !important; /* Override inline style */
-    }
 }
 
 @media (max-width: 576px) {
@@ -59,8 +55,8 @@
     }
     
     .navbar a img {
-        height: 75px !important;
-        width: 90px !important;
+        height: 40px !important;
+        width: 170px !important;
         padding: 0 !important;
     }
     .navbar {
